@@ -1,8 +1,8 @@
 let news=document.getElementById('news')
 
+
 const xhr= new XMLHttpRequest();
 xhr.open('GET','http://newsapi.org/v2/top-headlines?country=in&apiKey=7c70eaa46034410f9151aac41a9bee38',true);
-
 xhr.onload = function () {
     if (this.status==200) {
         let json=JSON.parse(this.responseText);
